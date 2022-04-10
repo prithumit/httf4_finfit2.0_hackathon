@@ -1,0 +1,82 @@
+{
+  "schema": {
+    "nationalInsuranceNumber": {
+      "type": "text",
+      "label": "Staatliche Versicherung Nummer",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(75,75)"
+      ]
+    },
+    "countryOfTaxResidence": {
+      "type": "select",
+      "label": "Land des Steuerwohnsitzes",
+      "color": "primaryColor",
+      "items": [
+        "United Kingdom",
+        "Canada",
+        "India"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "maxLen(50,50)",
+        "minLen(4,4)"
+      ]
+    },
+    "citizenOfUS": {
+      "type": "checkbox",
+      "label": "Bürger der US ?",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      }
+    },
+    "taxResidentInUS": {
+      "type": "checkbox",
+      "label": "Steuerresident in den US ?",
+      "color": "primaryColor",
+      "data-relation": "usTinNumber",
+      "data-relation-rules": [
+        "required",
+        "maxLen(50,50)"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      }
+    },
+    "usTinNumber": {
+      "type": "text",
+      "label": "US TIN-Nummer",
+      "disabled": true,
+      "color": "primaryColor",
+      "pattern": "^9\\d{2}-\\d{2}-\\d{4}$",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": []
+    }
+  },
+  "model": {
+    "nationalInsuranceNumber": "",
+    "countryOfTaxResidence": "United Kingdom",
+    "citizenOfUS": "",
+    "taxResidentInUS": "",
+    "usTinNumber": ""
+  }
+}

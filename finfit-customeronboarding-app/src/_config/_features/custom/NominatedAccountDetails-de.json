@@ -1,0 +1,43 @@
+{
+  "schema": {
+    "sortcode": {
+      "type": "text",
+      "label": "Sortiercode",
+      "color": "primaryColor",
+      "mask": "XX-XX-XX",
+      "max-attempts": 3,
+      "flex": {
+        "xs": 12,
+        "sm": 12,
+        "lg": 12
+      },
+      "rules": [
+        "required",
+        "maxLen(8,8)",
+        "minLen(8,6)"
+      ]
+    },
+    "accountNumber": {
+      "type": "text",
+      "label": "Accountnummer",
+      "color": "primaryColor",
+      "max-attempts": 3,
+      "fieldValidation": true,
+      "appendIcon": "",
+      "flex": {
+        "xs": 12,
+        "sm": 12,
+        "lg": 12
+      },
+      "rules": [
+        "required",
+        "maxLen(10,10)",
+        "minLen(8,8)"
+      ]
+    }
+  },
+  "model": {
+    "sortcode": "",
+    "accountNumber": ""
+  }
+}

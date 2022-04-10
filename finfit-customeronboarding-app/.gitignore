@@ -1,0 +1,35 @@
+.DS_Store
+backend
+node_modules
+/dist
+package-lock.json
+/coverage/
+/package-lock.json
+*.zip
+/tests/coverage/
+/tests/e2e/reports/
+selenium-debug.log
+/logs/
+/server/logs/
+/.node-persist/storage/*
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#otherfiles
+supervisord.conf

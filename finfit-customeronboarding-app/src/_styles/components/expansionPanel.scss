@@ -1,0 +1,13 @@
+.v-expansion {
+  &-panel-header {
+      height: 45px;
+      box-shadow: none;
+      border-bottom: 1px solid #000000 !important;
+  }
+}
+.v-expansion-panels {
+  padding: 0 13px !important;
+}
+.v-expansion-panel--active > .v-expansion-panel-header {
+    min-height: 45px;
+}

@@ -1,0 +1,25 @@
+//Color definition
+$primary: #000000;
+$secondary: #000000;
+$secondary-red: #ee3030;
+$secondary-red--dark: #d10000;
+$error: #d14e4e;
+$info: #6774bd;
+$success: #008000;
+$warning: #ffe604;
+$darkColor: #414141;
+$greyColor: #f5f5f5;
+
+$defaultGradient: [ $primary, $secondary ];
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  errors: $error;
+  infos: $info;
+  successColor: $success;
+  warningColor: $warning;
+  customGradient: $defaultGradient;
+  darkColor: $darkColor;
+  greyColor: $greyColor;
+}

@@ -1,0 +1,113 @@
+{
+    "termdeposit": {
+        "steps": [
+            {
+                "label": "Persönliche Daten",
+                "desc": "Description",
+                "enabled": true,
+                "icon": "mdi-account-circle",
+                "route": "PersonalDetails",
+                "mandatory": false,
+                "component": [
+                    {
+                        "name": "PhotoCapture",
+                        "label": "PhotoCapture",
+                        "schemaName": "",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    },
+                    {
+                        "name": "Form",
+                        "label": "Persönliche Daten",
+                        "icon": "mdi-account-circle",
+                        "schemaName": "PersonalDetails",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Adressen Details",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": true,
+                "component": [
+                    {
+                        "name": "Form",
+                        "label": "Ihre deutsche Adresse",
+                        "icon": "mdi-search-web",
+                        "schemaName": "YourUKAddress",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "zusätzliche Information",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": true,
+                "component": [
+                    {
+                        "name": "Form",
+                        "label": "Nominiertes Konto verknüpfen",
+                        "icon": "mdi-bank",
+                        "schemaName": "NominatedAccountDetails",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    },
+                    {
+                        "name": "Form",
+                        "label": "Ihre Steuerdaten",
+                        "schemaName": "TaxDetails",
+                        "isExpandable": false,
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Rückblick & Einwilligung",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": false,
+                "icon": "mdi-clipboard-check",
+                "component": [
+                    {
+                        "name": "ReviewDetailsAndConsent",
+                        "label": "Form",
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Referenzen",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": true,
+                "icon": "mdi-search-web",
+                "component": [
+                    {
+                        "name": "CreateCredentials",
+                        "label": "CreateCredentials",
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            }
+        ],
+        "settings": {
+            "vertical": false
+        }
+    }
+}

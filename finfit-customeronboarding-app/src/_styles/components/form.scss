@@ -1,0 +1,34 @@
+.form-container,
+.review-container {
+  .toolbar-header {
+    max-height: 40px;
+    box-shadow: none;
+    border-bottom: 1px solid #000000 !important;
+  }
+  label[for="required"]::after {
+    color: red;
+    content: "*";
+  }
+  .v-input--selection-controls {
+    margin-top: 1px;
+    padding-top: 1px;
+  }
+  .text-field-align {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .v-text-field {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .v-text-field .v-label--active {
+    font-size: 1.2rem;
+  }
+  .v-input--checkbox {
+    margin: -15px 0px 0px 0px;
+  }
+  .v-input--is-readonly {
+    opacity: 0.55;
+    pointer-events: none;
+  }
+}

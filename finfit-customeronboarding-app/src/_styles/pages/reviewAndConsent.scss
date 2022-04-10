@@ -1,0 +1,46 @@
+.review-container{
+  &__marketing-options {
+    margin-bottom: -20px !important;
+  }
+  .v-expansion-panel-header {
+    min-height: 40px;
+    .toolbar-header,
+    .form-container .toolbar-header,
+    .review-container .toolbar-header {
+      border-bottom: 0 none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    &__customer-confirmation {
+      padding-left: 5px !important;
+      margin-bottom: 2px !important;
+    }
+    &__consent-check {
+      margin-top: 16px !important;
+    }
+  }
+
+  @media only screen and (min-width: 601px) {
+    &__customer-confirmation {
+      padding-left: 5px !important;
+      margin-bottom: -10px !important;
+    }
+    &__consent-check {
+      margin-top: 8px !important;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    &__fscs-text {
+      margin-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1260px) {
+    &__fscs-text {
+      margin-left: -35px;
+    }
+  }
+}

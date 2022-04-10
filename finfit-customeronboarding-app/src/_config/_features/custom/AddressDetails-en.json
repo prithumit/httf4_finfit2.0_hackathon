@@ -1,0 +1,301 @@
+{
+  "title": "Address Information",
+  "schema": {
+    "postalCode": {
+      "type": "text",
+      "label": "Postcode",
+      "color": "primaryColor",
+      "preview": {
+        "label": "Postcode"
+      },
+      "data-qa": "postCode",
+      "regex": "^([^ !@#\\$%\\^&\\*][a-zA-Z0-9 ]*)$",
+      "maxLength": 8,
+      "data-type": "postcode-lookup",
+      "componentKeyEnable": "postalCode",
+      "rules": [
+        "required",
+        "maxLen(8,8)",
+        "minLen(6,6)"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-5"
+    },
+    "button": {
+      "type": "btn",
+      "data-relation": "postalCode",
+      "trigger-info": 6,
+      "label": "Find Address",
+      "small": true,
+      "rounded": true,
+      "preview": false,
+      "color": "primaryColor",
+      "dark":true,
+      "fab": true,
+      "icon": "mdi-magnify",
+      "class": "pl-5"
+    },
+    "buildingNumber": {
+      "type": "text",
+      "readonly": false,
+      "preview": {
+        "label": "House Number"
+      },
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "maxlength": 255,
+      "label": "House Number",
+      "regex": "^([^ !@#\\$%\\^&\\*A-Za-z])([0-9]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "conditional-mandate-disable": "addressLine1",
+      "tooltip": {
+        "label": "Address Line 1 or/and House Number is mandatory",
+        "top": true
+      },
+      "data-relation-rules": [
+        "required"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required"
+      ],
+      "class": "mr-5"
+    },
+    "addressLine1": {
+      "type": "text",
+      "readonly": false,
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "preview": {
+        "label": "House Name"
+      },
+      "maxlength": 255,
+      "label": "House Name",
+      "data-qa": "line1",
+ 
+      "regex": "^([^ !@#\\$%\\^&][a-zA-Z0-9 ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "conditional-mandate-disable": "buildingNumber",
+      "tooltip": {
+        "label": "Address Line 1 or/and House Number is mandatory",
+        "top": true
+      },
+      "data-relation-rules": [
+        "required"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      }
+    },
+    "addressLine2": {
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "type": "text",
+      "readonly": false,
+      "preview": {
+        "label": "Sub-building"
+      },
+      "maxlength": 255,
+      "label": "Sub-building",
+      "data-qa": "line2",
+   
+      "regex": "^([^ !@#\\$%\\^&][a-zA-Z0-9 ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-5"
+    },
+    "addressLine3": {
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "type": "text",
+      "readonly": false,
+      "maxlength": 255,
+      "label": "Street Name 1",
+      "data-qa": "addressLine3",
+      "preview": {
+        "label": "Street Name 1"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required"
+      ]
+    },
+    "addressLine4": {
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "type": "text",
+      "readonly": false,
+      "maxlength": 255,
+      "label": "Street Name 2",
+      "data-qa": "addressLine4",
+      "preview": {
+        "label": "Street Name 2"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-5",
+      "rules": []
+    },
+    "postOfficeBox": {
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "type": "text",
+      "readonly": false,
+      "maxlength": 255,
+      "label": "PO Box",
+      "data-qa": "postOfficeBox",
+      "preview": {
+        "label": "PO Box"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": []
+    },
+    "addressLine5": {
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "type": "text",
+      "readonly": false,
+      "maxlength": 255,
+      "label": "County",
+      "data-qa": "addressLine5",
+      "preview": {
+        "label": "County"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-5",
+      "rules": []
+    },
+    "townOrCity": {
+      "type": "text",
+      "disable-on-exist": {
+        "key": "addressId"
+      },
+      "readonly": false,
+      "maxlength": 255,
+      "label": "City",
+      "data-qa": "townOrCity",
+      "preview": {
+        "label": "City"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required"
+      ],
+      "class": "mr-5"
+    },
+    "country": {
+      "type": "autocomplete",
+      "id": "required",
+      "readonly": false,
+      "hidden": true,
+      "maxlength": 255,
+      "items": [
+        {
+          "text": "United Kingdom",
+          "value": "GBR"
+        },
+        {
+          "text": "Canada",
+          "value": "CAN"
+        },
+        {
+          "text": "India",
+          "value": "IND"
+        }
+      ],
+      "label": "Country",
+      "data-qa": "country",
+      "preview": {
+        "label": "Country"
+      },
+      "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-5 countryInput"
+    },
+    "addressID": {
+      "type": "hidden"
+    },
+    "countryShortCode": {
+      "id": "required",
+      "type": "hidden"
+    }
+  },
+  "model": {
+    "postalCode": "",
+    "buildingNumber": "",
+    "addressLine1": "",
+    "addressLine2": "",
+    "addressLine3": "",
+    "addressLine4": "",
+    "postOfficeBox": "",
+    "addressLine5": "",
+    "townOrCity": "",
+    "country": "GBR",
+    "addressID": "",
+    "countryShortCode": "GB"
+  }
+}

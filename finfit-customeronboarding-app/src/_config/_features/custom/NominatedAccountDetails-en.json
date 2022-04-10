@@ -1,0 +1,93 @@
+{
+  "title": "Funding/Payaway External Account",
+  "schema": {
+    "sortCode": {
+      "type": "text",
+      "sort": 1,
+      "label": "Sort Code",
+      "regex": "^[0-9|-]+$",
+      "preview": {
+        "label": "Sort Code"
+      },
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "mask": "XX-XX-XX",
+      "componentKeyEnable": "accountNumber",
+      "fieldValidation": true,
+      "fieldValidation-icon": false,
+      "max-attempts": 3,
+      "maxLength": 8,
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(8,8)",
+        "minLen(8,6)"
+      ],
+      "class": "mr-5"
+    },
+    "accountNumber": {
+      "type": "text",
+      "sort": 2,
+      "label": "Account Number",
+      "preview": {
+        "label": "Account Number"
+      },
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "regex": "^[0-9]+$",
+      "fieldValidation": true,
+      "fieldValidation-icon": true,
+      "componentKeyEnable": "accountNumber",
+      "max-attempts": 3,
+      "appendIcon": "",
+      "maxLength": 10,
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(10,10)",
+        "minLen(8,8)"
+      ],
+      "class": "md-ml-5"
+    },
+    "gutter": {
+      "sort": 3,
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      }
+    },
+    "accountProof": {
+      "sort": 4,
+      "id": "required",
+      "trigger": "accountNumber",
+      "type": "hidden",
+      "entityCode": "FECO_PROOF_CATEGORY_ACCOUNT",
+      "preview": false,
+      "label": "Account Statement",
+      "regex": "",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "color": "primaryColor",
+      "accept": "image/png, image/jpeg, image/bmp, pdf, doc",
+      "rules": "",
+      "appendIcon": ""
+    }
+  },
+  "model": {
+    "sortCode": "",
+    "accountNumber": "",
+    "accountProof": ""
+  }
+}

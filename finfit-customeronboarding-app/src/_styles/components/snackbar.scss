@@ -1,0 +1,13 @@
+.snackbar {
+	.v-snack {
+		font-size: medium !important;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.v-snack {
+			font-size: large !important;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	}
+}

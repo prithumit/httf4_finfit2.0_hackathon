@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.circular-loader {
+  margin-top: 50%;
+  margin-left: 50%;
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  color: #f2e2c0;
+}
+@media (min-width: 1264px) {
+  .container {
+    max-width: 1185px !important; /* for vuetify old version */
+  }
+}

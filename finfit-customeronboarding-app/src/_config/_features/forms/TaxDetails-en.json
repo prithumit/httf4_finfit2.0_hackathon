@@ -1,0 +1,70 @@
+{
+  "title": "Tax Information",
+  "schema": {
+    "usCitizenFlag": {
+      "id": "required",
+      "type": "checkbox",
+      "label": "Citizen of US",
+      "color": "primaryColor",
+      "preview": {
+        "label": "Citizen of US",
+        "format": {
+          "color": "green",
+          "icon": "mdi-checkbox-marked-circle"
+        }
+      },
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      }
+    },
+    "usTaxPayerFlag": {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Tax Payer in US",
+      "color": "primaryColor",
+      "data-relation": "taxIdentificationNumber",
+      "maxLength": 50,
+      "data-relation-rules": [
+        "required",
+        "maxLen(50,50)"
+      ],
+      "preview": {
+        "label": "Tax Payer in US",
+        "format": {
+          "color": "green",
+          "icon": "mdi-checkbox-marked-circle"
+        }
+      },
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "md-ml-5"
+    },
+    "taxIdentificationNumber": {
+      "type": "text",
+      "label": "US TIN",
+      "preview": {
+        "label": "US TIN"
+      },
+      "color": "primaryColor",
+      "autocomplete": "off",
+      "mask": "9XX-XX-XXXX",
+      "regex": "^9[0-9]{2}-(7[0-9]|8[0-8]|9[0-2]|9[4-9])-[0-9]{4}$",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": []
+    }
+  },
+  "model": {
+    "usCitizenFlag": false,
+    "usTaxPayerFlag": false,
+    "taxIdentificationNumber": ""
+  }
+}

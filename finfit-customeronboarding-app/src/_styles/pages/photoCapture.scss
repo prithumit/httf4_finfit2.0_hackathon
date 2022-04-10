@@ -1,0 +1,17 @@
+.photo-capture {
+	&--border {
+		border-style: dashed; 
+		border-color: #E0E0E0; 
+		object-fit: fill;
+	}
+	&--icon-align {
+		position: absolute; 
+		right: 4px;
+		top: 3px;
+	}
+}
+
+.v-image__image--cover {
+	background-size: contain !important;
+}
+

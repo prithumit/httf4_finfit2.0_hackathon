@@ -1,0 +1,189 @@
+{
+    "schema": {
+      "postalCode": {
+        "type": "text",
+        "label": "Postcode",
+        "color": "primaryColor",
+        "data-qa": "postCode",
+        "regex": "^([^ !@#\\$%\\^&\\*][a-zA-Z0-9 ]*)$",
+        "trigger-info": 6,
+        "maxLength": 8,
+        "data-type": "postcode-lookup",
+        "componentKeyEnable": "postalCode",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        },
+        "rules": [
+          "required",
+          "maxLen(8,8)",
+          "minLen(6,6)"
+        ]
+      },
+      "buildingNumber": {
+        "type": "text",
+        "disabled": false,
+        "label": "House Number",
+        "regex": "^([^ !@#\\$%\\^&\\*A-Za-z])([0-9]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "conditional-mandate-disable": "line1",
+        "data-relation-rules": [
+          "required"
+        ],
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        },
+        "rules": [
+          "required"
+        ]
+      },
+      "line1": {
+        "type": "text",
+        "disabled": false,
+        "label": "House Name",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "conditional-mandate-disable": "buildingNumber",
+        "data-relation-rules": [
+          "required"
+        ],
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "line2": {
+        "type": "text",
+        "disabled": false,
+        "label": "Sub-building",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "line3": {
+        "type": "text",
+        "disabled": false,
+        "label": "Street Name1",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "selected": 0,
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        },
+        "rules": [
+          "required"
+        ]
+      },
+      "line4": {
+        "type": "text",
+        "disabled": false,
+        "label": "Street Name2",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "selected": 0,
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "townOrCity": {
+        "type": "text",
+        "disabled": false,
+        "label": "City",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        },
+        "rules": [
+          "required"
+        ]
+      },
+      "line5": {
+        "type": "text",
+        "disabled": false,
+        "label": "County",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "line7": {
+        "type": "text",
+        "disabled": false,
+        "label": "PO BOX",
+        "regex": "^([^ ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "line6": {
+        "type": "text",
+        "disabled": false,
+        "label": "District",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      },
+      "country": {
+        "type": "text",
+        "disabled": false,
+        "hidden": true,
+        "label": "Country",
+        "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+        "color": "primaryColor",
+        "autocomplete": "off",
+        "flex": {
+          "xs": 12,
+          "sm": 6,
+          "lg": 6
+        }
+      }
+    },
+    "model": {
+      "postalCode": "",
+      "buildingNumber": "",
+      "line1": "",
+      "line2": "",
+      "line3": "",
+      "line4": "",
+      "townOrCity": "",
+      "line5": "",
+      "line7": "",
+      "line6": "",
+      "country": "GBR"
+    }
+  }
+  

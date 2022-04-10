@@ -1,0 +1,72 @@
+.v-input__control {
+  width: auto !important;
+}
+
+.v-avatar {
+  overflow: inherit !important;
+}
+
+.home {
+  &__underlined-cursor-pointer {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  &__welcome-heading {
+    font-size: 1.75rem !important;
+  }
+  &__fetch-OTP-arrow {
+    top: -4px;
+  }
+  &__main-logo {
+    background-image: url($main-logo-path);
+    background-size: contain;
+    height: 100px;
+    width: 200px;
+  }
+  &--resendOTP {
+    .v-text-field__details {
+      display: none;
+    }
+  }
+  &--validation-error {
+    .v-messages.theme--light.error--text {
+      color: #a12020 !important;
+    }
+  }
+  &__email-btn {
+    .theme--dark.v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn {
+      border-color: #ffffff !important;
+    }
+  }
+  .v-alert {
+    padding: 6px !important;
+  }
+  .theme--light.v-btn.v-btn--disabled {
+    color: #fff !important;
+  }
+}
+.v-input__control {
+  width: auto !important;
+}
+.Cookie--blood-orange .Cookie__button {
+  padding: 0.625em 3.125em;
+}
+.Cookie > * {
+  margin: 5px !important;
+}
+.v-avatar {
+  overflow: inherit !important;
+}
+
+@media (max-width: 580px) {
+  .home {
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-image: url(../../assets/login.jpg) !important;
+  }
+  .v-messages__message {
+    color: #694ed6 ;
+  }
+}

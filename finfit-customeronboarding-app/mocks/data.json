@@ -1,0 +1,68 @@
+{
+   "customerDetails": {
+      "customerId": "AGF386"
+   },
+   "EBVA_VALID": {
+      "status": "SUCCESS"
+   },
+   "EBVA_INVALIDDATA": {
+      "status": "INVALIDDATA"
+   },
+   "EBVA_FAILURE": {
+      "status": "FAILURE"
+   },
+   "EBVA_PROCESSING_ERROR": {
+      "status": "PROCESSING_ERROR"
+   },
+   "createAccount": {
+      "accountNumber": "00007003"
+   },
+   "createCustomer": {
+      "customerId": "0000101",
+      "createDateTime": "2017-07-21T13:01:50Z"
+   },
+   "address": {
+      "items": [
+         {
+            "houseNumber": 1234,
+            "houseName": "Stroma",
+            "subBuilding": "Astro",
+            "streetName1": "Westminster 016",
+            "streetName2": "",
+            "streetAddress": "Cities of London and Westminste",
+            "city": "London",
+            "county": "Hyde Park",
+            "poBox": "AZXS",
+            "postCode": "ABCD1F",
+            "district": "NHS West London",
+            "country": "England"
+         },
+         {
+            "houseNumber": "12/24",
+            "houseName": "UKI32",
+            "subBuilding": "Sky",
+            "streetName1": "Westminster 016",
+            "streetName2": "",
+            "streetAddress": "Cities of London and Westminste",
+            "city": "London",
+            "county": "Hyde Park",
+            "poBox": "AZXS",
+            "district": "NHS West London",
+            "country": "England"
+         },
+         {
+            "houseNumber": "3/12",
+            "houseName": "E380",
+            "subBuilding": "Stars",
+            "streetName1": "Westminster 016",
+            "streetName2": "",
+            "streetAddress": "Cities of London and Westminste",
+            "city": "London",
+            "county": "Hyde Park",
+            "poBox": "AZXS",
+            "district": "NHS West London",
+            "country": "England"
+         }
+      ]
+   }
+}

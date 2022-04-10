@@ -1,0 +1,116 @@
+{
+  "schema": {
+    "firstName": {
+      "type": "text",
+      "appendIcon": "",
+      "label": "Vorname",
+      "data-qa": "firstName",
+      "regex": "^[a-zA-Z]+$",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(75,75)"
+      ]
+    },
+    "lastName": {
+      "type": "text",
+      "label": "Nachname",
+      "data-qa": "lastName",
+      "regex": "^[a-zA-Z]+$",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(75,75)"
+      ]
+    },
+    "dateOfBirth": {
+      "type": "calendar",
+      "label": "Geburtsdatum",
+      "placeholder": "YYYY-MM-DD",
+      "data-qa": "dateOfBirth",
+      "readonly": true,
+      "regex": "^\\d{4}-\\d{2}-\\d{2}$",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 12,
+        "lg": 12
+      },
+      "autocomplete": "off",
+      "hint": "YYYY-MM-DD",
+      "rules": [
+        "required",
+        "dateValidation(18,18)",
+        "dateFormatValidate"
+      ]
+    },
+    "identificationType": {
+      "type": "select",
+      "label": "Nationaler Identifikator Art",
+      "data-dynRegex": true,
+      "selected": 0,
+      "color": "primaryColor",
+      "data-regex": {
+        "Passport": {
+          "label": "Passport Number",
+          "regex": "^[a-zA-Z]+$"
+        },
+        "Driving License": {
+          "label": "Driving License Number",
+          "regex": "^[0-9]+$"
+        },
+        "National ID": {
+          "label": "National ID Number",
+          "regex": "^[a-z]+$"
+        }
+      },
+      "data-relation": "identificationId",
+      "items": [
+        "Passport",
+        "Driving License",
+        "National ID"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required"
+      ]
+    },
+    "identificationId": {
+      "type": "text",
+      "label": "Nationaler Identifikator Nummer",
+      "regex": "",
+      "data-qa": "nationalId",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(50,50)"
+      ]
+    }
+  },
+  "model": {
+    "firstName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "identificationType": "",
+    "identificationId": ""
+  }
+}

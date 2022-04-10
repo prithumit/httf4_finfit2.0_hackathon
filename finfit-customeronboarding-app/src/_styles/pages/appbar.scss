@@ -1,0 +1,9 @@
+.header {
+    &__logo {
+      background-image: url($logo-path);
+      background-size: contain;
+      height: 50px;
+      width: 90px;
+    }
+	margin-top: 33px;
+ }

@@ -1,0 +1,393 @@
+{
+    "currentsavings": {
+        "steps": [
+            {
+                "label": "Personal Details",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": false,
+                "justify": "center",
+                "delete": false,
+                "icon": "mdi-account-circle",
+                "route": "PersonalDetails",
+                "component": [
+                    {
+                        "name": "PhotoCapture",
+                        "label": "Photo Capture",
+                        "preview": false,
+                        "size": {
+                            "xs": 8,
+                            "sm": 5,
+                            "md": 4,
+                            "lg": 3,
+                            "xl": 3
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable Camera"
+                    },
+                    {
+                        "name": "Form",
+                        "label": "Personal Details",
+                        "preview": {
+                            "label": "Personal Details"
+                        },
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 9,
+                            "lg": 9,
+                            "xl": 9
+                        },
+                        "icon": "mdi-account-circle",
+                        "schemaName": "PersonalDetails",
+                        "validation": true,
+                        "enabled": true,
+                        "formValidation": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Address Details",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": true,
+                "justify": "center",
+                "delete": false,
+                "icon": "mdi-home-variant",
+                "route": "AddressDetails",
+                "component": [
+                    {
+                        "name": "Form",
+                        "label": "Address Details",
+                        "preview": {
+                            "label": "Address Details"
+                        },
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "icon": "mdi-map-marker",
+                        "schemaName": "AddressDetails",
+                        "minItems": 5,
+                        "validation": true,
+                        "enabled": true,
+                        "formValidation": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Review And Consent",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": false,
+                "delete": false,
+                "icon": "mdi-clipboard-check",
+                "justify": "center",
+                "route": "ReviewAndConsent",
+                "component": [
+                    {
+                        "name": "ReviewDetailsAndConsent",
+                        "label": "Form",
+                        "preview": false,
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Create Credentials",
+                "desc": "Enter Description",
+                "enabled": true,
+                "mandatory": true,
+                "delete": false,
+                "justify": "center",
+                "icon": "mdi-search-web",
+                "route": "CreateCredentials",
+                "component": [
+                    {
+                        "name": "CreateCredentials",
+                        "label": "Create Credentials",
+                        "preview": false,
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            }
+        ],
+        "settings": {
+            "vertical": false
+        }
+    },
+    "termdeposit": {
+        "steps": [
+            {
+                "label": "Personal Details",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": false,
+                "justify": "center",
+                "delete": false,
+                "icon": "mdi-account-circle",
+                "route": "PersonalDetails",
+                "component": [
+                    {
+                        "name": "PhotoCapture",
+                        "label": "Photo Capture",
+                        "preview": false,
+                        "size": {
+                            "xs": 8,
+                            "sm": 5,
+                            "md": 4,
+                            "lg": 3,
+                            "xl": 3
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable Camera",
+                        "class": "mx-auto"
+                    },
+                    {
+                        "name": "Form",
+                        "label": "Personal Details",
+                        "preview": {
+                            "label": "Personal Details"
+                        },
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 9,
+                            "lg": 9,
+                            "xl": 9
+                        },
+                        "icon": "mdi-account-circle",
+                        "schemaName": "PersonalDetails",
+                        "validation": true,
+                        "enabled": true,
+                        "formValidation": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Address Details",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": true,
+                "justify": "center",
+                "delete": false,
+                "icon": "mdi-home-variant",
+                "route": "AddressDetails",
+                "component": [
+                    {
+                        "name": "Form",
+                        "label": "Address Details",
+                        "preview": {
+                            "label": "Address Details"
+                        },
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "icon": "mdi-map-marker",
+                        "schemaName": "AddressDetails",
+                        "minItems": 5,
+                        "validation": true,
+                        "enabled": true,
+                        "formValidation": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Review And Consent",
+                "desc": "Description",
+                "enabled": true,
+                "mandatory": false,
+                "delete": false,
+                "icon": "mdi-clipboard-check",
+                "justify": "center",
+                "route": "ReviewAndConsent",
+                "component": [
+                    {
+                        "name": "ReviewDetailsAndConsent",
+                        "label": "Form",
+                        "preview": false,
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Create Credentials",
+                "desc": "Enter Description",
+                "enabled": true,
+                "mandatory": true,
+                "delete": false,
+                "justify": "center",
+                "icon": "mdi-search-web",
+                "route": "CreateCredentials",
+                "component": [
+                    {
+                        "name": "CreateCredentials",
+                        "label": "Create Credentials",
+                        "preview": false,
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            }
+        ],
+        "settings": {
+            "vertical": false
+        }
+    },
+    "creditcard": {
+        "steps": [
+            {
+                "label": "Personal Details",
+                "desc": "Enter Description",
+                "enabled": true,
+                "mandatory": true,
+                "delete": false,
+                "icon": "mdi-account-circle",
+                "route": "PersonalDetails",
+                "component": [
+                    {
+                        "name": "PhotoCapture",
+                        "label": "Photo Capture",
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    },
+                    {
+                        "name": "Form",
+                        "label": "Personal Details",
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "icon": "mdi-account-circle",
+                        "schemaName": "PersonalDetails",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Address",
+                "desc": "Enter Description",
+                "enabled": true,
+                "mandatory": true,
+                "delete": false,
+                "icon": "mdi-home-variant",
+                "route": "YourUKAddress",
+                "component": [
+                    {
+                        "name": "Form",
+                        "label": "Address",
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "icon": "mdi-search-web",
+                        "schemaName": "YourUKAddress",
+                        "validation": true,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            },
+            {
+                "label": "Create Credentials",
+                "desc": "Enter Description",
+                "enabled": true,
+                "mandatory": true,
+                "delete": false,
+                "icon": "mdi-search-web",
+                "route": "CreateCredentials",
+                "component": [
+                    {
+                        "name": "CreateCredentials",
+                        "label": "Form",
+                        "size": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12,
+                            "xl": 12
+                        },
+                        "schemaName": "",
+                        "validation": false,
+                        "enabled": true,
+                        "validationLabel": "Enable validation"
+                    }
+                ]
+            }
+        ],
+        "settings": {
+            "vertical": false
+        }
+    }
+}

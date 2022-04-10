@@ -1,0 +1,25 @@
+.postcode-lookup {
+	&--list-value {
+		border-bottom: 1px solid lightgray;
+	}
+	&__manualAddress {
+		margin-top:20px;
+	}
+	&__spacing {
+		.v-list-item__title, .v-list-item__subtitle {
+			white-space: normal !important;
+		}
+	}
+	&__hide-overflow {
+		overflow: hidden;
+	}
+	&__enable-overflow {
+		max-height: 400px;
+		overflow-y: scroll;
+		scrollbar-width: 4px;
+	}
+}
+
+
+
+

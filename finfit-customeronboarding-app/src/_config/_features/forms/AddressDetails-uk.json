@@ -1,0 +1,253 @@
+{
+    "title": "Address Information",
+    "schema": {
+        "postalCode": {
+            "type": "text",
+            "label": "Postcode",
+            "color": "primaryColor",
+            "data-qa": "postCode",
+            "regex": "^([^ !@#\\$%\\^&\\*][a-zA-Z0-9 ]*)$",
+            "maxLength": 8,
+            "data-type": "postcode-lookup",
+            "componentKeyEnable": "postalCode",
+            "rules": [
+                "required",
+                "maxLen(8,8)",
+                "minLen(6,6)"
+            ]
+        },
+        "buildingNumber": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "House Number",
+            "data-qa": "buildingNumber",
+            "preview": {
+                "label": "",
+                "purgeNext": [
+                    "line1",
+                    "line2",
+                    "line3",
+                    "line4",
+                    "townOrCity",
+                    "line5",
+                    "line6",
+                    "line7",
+                    "country"
+                ],
+                "purgeSeperator": ", "
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*A-Za-z])([0-9]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "conditional-mandate-disable": "line1",
+            "tooltip": {
+                "label": "House Name or/and House Number is mandatory",
+                "top": true
+            },
+            "data-relation-rules": [
+                "required"
+            ],
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            },
+            "rules": [
+                "required"
+            ]
+        },
+        "line1": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "House Name",
+            "data-qa": "line1",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "conditional-mandate-disable": "buildingNumber",
+            "tooltip": {
+                "label": "House Name or/and House Number is mandatory",
+                "top": true
+            },
+            "data-relation-rules": [
+                "required"
+            ],
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "line2": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "Sub-building",
+            "data-qa": "line2",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "line3": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "Street Name1",
+            "data-qa": "line3",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "selected": 0,
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            },
+            "rules": [
+                "required"
+            ]
+        },
+        "line4": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "Street Name2",
+            "data-qa": "line4",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "selected": 0,
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "townOrCity": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "City",
+            "data-qa": "townOrCity",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            },
+            "rules": [
+                "required"
+            ]
+        },
+        "line5": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "County",
+            "data-qa": "line5",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "line7": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "PO BOX",
+            "data-qa": "line7",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "line6": {
+            "type": "text",
+            "readonly": false,
+            "maxlength": 255,
+            "label": "District",
+            "data-qa": "line6",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        },
+        "country": {
+            "type": "text",
+            "readonly": false,
+            "hidden": true,
+            "maxlength": 255,
+            "label": "Country",
+            "data-qa": "country",
+            "preview": {
+                "purge": true
+            },
+            "regex": "^([^ !@#\\$%\\^&\\*0-9][a-zA-Z ]*)$",
+            "color": "primaryColor",
+            "autocomplete": "off",
+            "flex": {
+                "xs": 12,
+                "sm": 6,
+                "lg": 6
+            }
+        }
+    },
+    "model": {
+        "postalCode": "",
+        "buildingNumber": "",
+        "line1": "",
+        "line2": "",
+        "line3": "",
+        "line4": "",
+        "townOrCity": "",
+        "line5": "",
+        "line7": "",
+        "line6": "",
+        "country": "GBR"
+    }
+}

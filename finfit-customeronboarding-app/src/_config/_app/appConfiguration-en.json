@@ -1,0 +1,91 @@
+{
+  "applicationSettings": {
+    "desc": "Application Name, Bank Name and More",
+    "label": "Application Settings",
+    "applicationName": "Digital Onboarding",
+    "bankName": "Finastra",
+    "companyWebsite": "https://www.finastra.com/",
+    "productsUrl": "http://10.240.64.68:8081/",
+    "helpUrl": "https://www.finastra.com/sites/default/files/documents/2018/04/brochure_fusion-essence-solution-overview.pdf",
+    "digitalChannelsWebURL": "http://blrcsldcclo0057:9080/foundation-guiwar/login.html#/",
+    "digitalChannelsIOSURL": "",
+    "digitalChannelsAndriodURL": "",
+    "bankSortCode": "04-00-36"
+  },
+  "serverSettings": {
+    "desc": "Secure mode and Port number",
+    "label": "Server Settings",
+    "baseUrl": "https://localhost:3000/"
+  },
+  "defaultConfigurations": {
+    "desc": "Configurable Application Properties",
+    "label": "Configurable Application Properties",
+    "countryISDCode": "+44",
+    "enableCustomTheme": false,
+    "idleTimeoutInterval": 600000,
+    "enableCustomBackgroundImage": false,
+    "enableFSCSDeclaration": true,
+    "defaultProductType": "termdeposit",
+    "customerCredentialsValidationRegEx": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
+    "customerLoginValidationRegEx": "^[a-zA-Z0-9_]*$",
+    "customerLoginValidationMessage": "Only numbers, alphabets and underscore allowed",
+    "customerCredentialsValidationMessage": "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character",
+    "maxUploadFileSize": 512,
+    "uploadCustomerPhotoHeight": 200,
+    "uploadCustomerPhotoWidth": 200,
+    "otpResendTimeInterval": 30000,
+    "emailResendTimeInterval": 30000,
+    "isTOSMandatory": true,
+    "targetCountry": "GBR",
+    "enableTargetCountryAlert": false,
+    "enableAccountVerification": true,
+    "disableLandingPageDialog": false,
+    "dateFormat": {
+      "apiFormat": "YYYY-MM-DD",
+      "uiFormat": "DD-MM-YYYY"
+    }
+  },
+  "localizationAndLanguageSettings": {
+    "desc": "Localization and Language Settings",
+    "label": "Localization and Language Settings",
+    "defaultLocalizationKey": "en",
+    "appliedLocalizationKey": "en"
+  },
+  "consentDeclarationContents": {
+    "marketingEmailConsentFlag": {
+      "toolTip": "Select one or more channels",
+      "text": "I would like to receive marketing communications.",
+      "mandatory": false,
+      "options": [
+        {
+          "value": "SMS"
+        },
+        {
+          "value": "EMAIL"
+        }
+      ]
+    },
+    "productTermsAcceptedFlag": {
+      "text": "of the bank, also - hereby declare that the details furnished are true and accurate to the best of my knowledge.",
+      "mandatory": true
+    }
+  },
+  "termsAndConditionContents": {
+    "termdeposit": [
+      "resident_check",
+      "age_check",
+      "document_check"
+    ],
+    "currentsavings": [
+      "resident_check",
+      "age_check"
+    ],
+    "terms": [
+      "This will be treated as your consent to store your basic information, in case you have to leave in between and return at a later time to continue with the application.",
+      "If you choose not to pursue the application for any reasons, all your information will automatically deleted after 30 days",
+      "At the time of Exit during the process of application you can also choose to let keep you basic information or delete all your data",
+      "Bank will use your information to verify KYC through third party (Equifax)",
+      "Be aware that, Bank will not share your data with any other outside entity without your consent"
+    ]
+  }
+}

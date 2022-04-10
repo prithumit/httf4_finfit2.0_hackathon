@@ -1,0 +1,61 @@
+{
+    "services": {
+        "product": {
+            "target": "customerOnboarding/product/summary"
+        },
+        "otp": {
+            "target": "customerOnboarding/otp/send"
+        },
+        "country": {
+            "target": "countries/isdCode/descriptionList"
+        },
+        "upload": {
+            "target": "customerOnboarding/documents"
+        },
+        "validate": {
+            "target": "customerOnboarding/otp/validate"
+        },
+        "verifyEmail": {
+            "target": "customerOnboarding/isExistingEmail"
+        },
+        "verifyLogin": {
+            "target": "customerOnboarding/isExistingUserLoginId"
+        },
+        "verifyPhone": {
+            "target": "customerOnboarding/dedupExistingMobileNumber"
+        },
+        "verifyStatus": {
+            "target": "customerOnboarding/isExistingMobileNumber"
+        },
+        "sendEmail": {
+            "target": "emailVerification"
+        },
+        "emailStatus": {
+            "target": "emailVerification/status"
+        },
+        "application": {
+            "target": "customerOnboarding"
+        },
+        "abort": {
+            "target": "customerOnboarding/abort"
+        },
+        "search": {
+            "target": "addressLookUp"
+        },
+        "onboard": {
+            "target": "customerOnboarding/submit"
+        },
+        "credentials": {
+            "target": "customerOnboarding/createPassword"
+        },
+        "ebav": {
+            "target": "identityVerification"
+        },
+        "resume": {
+            "target": "customerOnboarding/findByMobileNumber"
+        },
+        "permissions": {
+            "target": "permissionList"
+        }
+    }
+}

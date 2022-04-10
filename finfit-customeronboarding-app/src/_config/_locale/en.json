@@ -1,0 +1,526 @@
+{
+    "common": {
+        "yes": "Yes",
+        "no": "No",
+        "and": "and",
+        "okay": "OK",
+        "saveButton_text": "Save",
+        "success": "Success!",
+        "cancelButton_text": "Cancel",
+        "confirmation_message": "Are You Sure?",
+        "continue_later": "Save & Exit",
+        "start_fresh": "Start fresh"
+    },
+    "header": {
+        "headingText": "this is a header",
+        "tooltip_fullScreen": "Full Screen"
+    },
+    "home": {
+        "welcome": "Welcome to",
+        "bank": "bank",
+        "tagLine": "Your account will be setup in 5 simple steps!",
+        "missingProduct": "Sorry, No products were found",
+        "intro": {
+            "currentsavings": "To open a Current & Savings Account, you must answer YES to the following questions",
+            "termdeposit": "To open a Fixed Deposit Account, you must answer YES to the following questions"
+        },
+        "file_fetch": "Please wait while we fetch application information",
+        "cta": "None of your information will be saved by the bank without consent",
+        "resident": "",
+        "salutation": "Are you a UK Resident?",
+        "agesalutation": "Are you over 18 years of age?",
+        "nominatedAccountSalutation": "You have the Nominated Account details, that can be verified?",
+        "yes": "Yes",
+        "no": "No",
+        "otp": "OTP has been sent to",
+        "otp_resent": "OTP has been resent !",
+        "email_verify": {
+            "PENDING": "Please verify the email to proceed further",
+            "VERIFIED": "Your email has been verified",
+            "No entry found": "Sorry! we were unable to process your email"
+        },
+        "email_resent": "Email has been resent !",
+        "otp_wrong": "Invalid OTP",
+        "notUKResidentHeading": "I'm not a resident",
+        "notUKResidentDesc": "Sorry! You need to meet the eligibilty criteria to proceed further. Thank you for your interest.",
+        "agree": "By choosing to proceed, you agree to bank's ",
+        "tos": "Terms & Conditions",
+        "getStarted": "Get Started",
+        "cookiePolicy": " uses cookies to ensure you get the best experience in our website. To find out more read our updated",
+        "privacyPolicy": "privacy and cookie policy",
+        "countryCode": "+44",
+        "showMore": "Show More",
+        "showLess": "Show Less",
+        "flag": "UK Flag",
+        "resend": "Resend OTP",
+        "email": "Resend Email",
+        "notin_uk": "You can create the account after returning home to UK",
+        "customer": {
+            "content": "You are already a customer of the bank, click 'Ok' to access your online account",
+            "title": "Existing Customer"
+        },
+        "prospect": {
+            "content": "You have already initiated the application, continue where you left?",
+            "title": "Existing Application"
+        },
+        "email_verification": {
+            "content": "Click on the verification link in your email to confirm your email address",
+            "title": "Email Verification Status"
+        },
+        "disclaimer": {
+            "termdeposit": {
+                "resident_check": "Are you a UK Resident?",
+                "age_check": "Are you over 18 years of age?",
+                "document_check": "You have the Nominated Account details, that can be verified?"
+            },
+            "currentsavings": {
+                "resident_check": "Are you a UK Resident?",
+                "age_check": "Are you over 18 years of age?",
+                "document_check": "You have the Nominated Account details, that can be verified?"
+            }
+        }
+    },
+    "createCredentials": {
+        "enter_password": "Enter Password",
+        "confirm_password": "Confirm Password",
+        "loginid_unavailable": "This Login has already been taken, try another",
+        "required_password": "Password Required",
+        "required_login": "Login ID Required",
+        "your_login_credentials": "Your Login Credentials",
+        "use_emailId_as_username": "All Set: Get your credentials and start transacting with online banking now!",
+        "password_mismatch": "Confirm password should be same as Entered password"
+    },
+    "onboard": {
+        "resume_later_msg": "This will be treated as your consent to store your basic information in case you need to pause the application process and return later. \nAny document uploaded in the application will not be saved. \nYou'll be redirected to home page.",
+        "save_success": "Application data has been saved",
+        "save_error": "Sorry, there was an error saving application data",
+        "onboard_status": "Onboarding Status",
+        "onboard_successful": "You have been successfully onboarded!",
+        "onboard_unsuccessful": "Customer Onboarding is Unsuccessful!",
+        "document_upload_successful": "Document information is updated",
+        "save": "Save Application",
+        "abort": {
+            "discard": "Discard Application",
+            "modal": {
+                "content": "Are you sure you want to discard the application, all the data that has been entered will be deleted ?",
+                "title": "Discard Application"
+            }
+        },
+        "kyc": {
+            "termdeposit": {
+                "KYC_SUCCESS : without restriction": {
+                    "default": "Welcome, fund your Term Deposit account within {x} days to activate your account",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank or login to online banking account create your term deposit product"
+                },
+                "COMPLIANT": {
+                    "default": "Welcome, fund your Term Deposit account within {x} days to activate your account",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                },
+                "COMPLIANTWITHRESTRICTION": {
+                    "default": "Welcome, please contact bank to provide additional information to activate your account",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                },
+                "KYC PENDING": {
+                    "default": "Welcome, please contact bank to provide additional information and complete your Term Deposit application",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                },
+                "KYC NONCOMPLIANT": {
+                    "default": "Welcome, please contact bank to provide additional information and complete your Term Deposit application",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                }
+            },
+            "currentsavings": {
+                "KYC_SUCCESS : without restriction": {
+                    "default": "Welcome, fund your Term Deposit account within 10 days to activate your account",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank or login to online banking account create your term deposit product"
+                },
+                "COMPLIANT": {
+                    "default": "Welcome , you may now access your online banking account and start transacting",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                },
+                "KYC PENDING": {
+                    "default": "Welcome, please contact bank to provide additional information and complete your CASA application",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                },
+                "KYC NONCOMPLIANT": {
+                    "default": "Welcome, please contact bank to provide additional information and complete your CASA application",
+                    "no_account": "Welcome to Finastra bank, unfortunately your term deposit account creation could not be completed, contact bank create your term deposit account"
+                }
+            }       
+        }
+    },
+    "onboard_confirmation": {
+        "account_details": {
+            "customer_id": "Customer ID",
+            "sortcode": "Sort Code",
+            "account_number": {
+                "termdeposit": "TD Account Number",
+                "currentsavings": "CS Account Number"
+            },
+            "login_now": "Login now"
+        },
+        "product_details": {
+            "account_type": {
+                "termdeposit": "Term Deposit",
+                "currentsavings": "Current & Savings"
+            },
+            "term_length": "Term Length:",
+            "product_term": "Months",
+            "balance": "Balance:",
+            "type": "Type:",
+            "description": "Description:",
+            "awaiting_funds": "Awaiting Funds"
+        },
+        "offer_details": {
+            "offer_greet": "Congratulations!",
+            "offer": "You are also eligible to open a Gold Savings Account including a virtual Debit Card."
+        },
+        "download_app_via": {
+            "andriod": "Google Play",
+            "ios": "App Store"
+        }
+    },
+    "idleDialog": {
+        "sessionExpire_title": "Session is Expired",
+        "sessionExpire_message": "Session has been inactive for a while. For security reasons, you have been logged out automatically from the application.",
+        "sessinLogout_OkButton": "Ok"
+    },
+    "photoCapture": {
+        "capture_selfie": "Capture Selfie",
+        "loading_progress": "Loading...",
+        "upload_info": "Upload an image less than",
+        "camera_button": "Camera",
+        "browse_button": "Browse",
+        "face_the_camera": "Take your selfie",
+        "image_size_exceeded": "Image is too large !",
+        "crop_image": "Crop the image"
+    },
+    "postCodeLookUp": {
+        "address_lookup": {
+            "title": "Address Lookup",
+            "failed": "Address lookup failed",
+            "loading": "Loading Addresses..."
+        },
+        "apply_and_save": "Apply & Save",
+        "add_manually": "Add Manually"
+    },
+    "screenMaintenance": {
+        "placeholder_field_label": "Placeholder",
+        "default_field_label": "Default",
+        "hint_field_label": "Hint",
+        "table_required_label": "Required",
+        "disabled_label": "Disabled",
+        "highlight_label": "Field Validation",
+        "readonly_label": "Readonly",
+        "minLength_field_label": "Minimum Length",
+        "maxLength_field_label": "Maximum Length",
+        "saveButton_text": "Save",
+        "deleteMessage_dialog": "Are you sure you want to delete",
+        "yes_text": "Yes",
+        "no_text": "No",
+        "enter_value_Field_label": "Enter Values",
+        "header_ID": "ID",
+        "header_value": "Value",
+        "key_field_label": "Key",
+        "label_field_label": "Label",
+        "table_type_field_label": "Type",
+        "table_actions_label": "Actions",
+        "regExp_field_label": "Regular Expression",
+        "option_label": "Options",
+        "required": "Field is Required!",
+        "minErrorMessage": "Field cannot have less than ",
+        "maxErrorMesage": "Field cannot have more than ",
+        "patternErrorMessage": "Invalid format!",
+        "charcter": " characters",
+        "screenMaintainenceComponent_title": "Screen Maintainence",
+        "schemaSelect_card_title": "Search Screens",
+        "schemaSelect_card_selectSchemaField_label": "Select Screen",
+        "schemaSelect_card_selectSectionField_label": "Select Section",
+        "dataExistsMessage_dialog": "Data Exists",
+        "dataExistsMessage_gotItButton_text": "Got It",
+        "attributes_card_title": "Attributes",
+        "formPreview_card_title": "Form Preview",
+        "addScreenAttributes_card_title": "Add Screen Attributes",
+        "editScreenAttributes_card_title": "Edit Screen Attributes",
+        "autoItemEdit_dialog": "Auto Item Edit",
+        "AddchecklistItemEdit_dialog": "Add Checklist Item",
+        "checklistItemEdit_dialog": "Edit Checklist Item",
+        "customer_profile_form_gender_label": "GENDER",
+        "radioItemEdit_dialog": "Radio Item Edit",
+        "selectItemEdit_dialog": "Select Item Edit",
+        "languageDetails_label": "Language Details"
+    },
+    "systemMessages": {
+        "exceptions": {
+            "EXTERNAL_EBAV_VERIFICATION": {
+                "message": "Sorry, there was an error processing your request",
+                "title": "Processing Error"               
+            },
+            "ONBOARD_PROSPECT_FAILURE": {
+                "message": "Customer onboarding is unsuccessful",
+                "title": "Onboarding Status"
+            },
+            "CREATE_APPLICATION_FAILURE": {
+                "message": "Sorry, there was an error saving application data",
+                "title": "Application Status"
+            },
+            "PRODUCT_FAILURE": {
+                "message": "Sorry, there was an error processing the selected product",
+                "title": "Product Not Found"
+            },
+            "EMAIL_ALREADY_VERIFIED": {
+                "message": "Your email has been verified!",
+                "title": "Email Verificaton Status"
+            },
+            "DEFAULT": {
+                "message": "Sorry, there was an error processing your request",
+                "title": "Processing Error"
+            },
+            "NETWORK_ERROR": {
+                "message": "Sorry, your connection has been lost",
+                "title": "Connection Lost"
+            }
+        },
+        "404": {
+            "message": "Sorry page not found",
+            "title": "Sorry page not found",
+            "custom": {
+                "Product Code Not Found": "Sorry, this product does not exist",
+                "Error occurred while processing request": "Sorry, there was an error processing your request"
+            }
+        },
+        "400": {
+            "message": "Sorry, there was an error processing your request",
+            "title": "Processing Error",
+            "custom": {
+                "DCO_PROSPECT_CREATION_ERROR_PHONE_NUMBER": "Your mobile number or email ID is already registered with the bank, login with registered details to access your online account",
+                "DCO_PROSPECT_CREATION_ERROR_EMAIL": "Your mobile number or email ID is already registered with the bank, login with registered details to access your online account",
+                "DCO_APPLICATION_STATUS_NOT_SUPPORTED": "Sorry, there was an error processing your application",
+                "Invalid TD Account Information Data": "Sorry, there was an error processing your application",
+                "BANK_ERROR": "Sorry, there was an error processing your request, please contact bank",
+                "FAILED:null": "Sorry, there was an error creating the account, please contact bank",
+                "FAILED:Backend Exception": "Sorry, there was an error processing your request",
+                "Missing fields: ProductContextCode, ProductTermInMonths": "Sorry, product information is missing",
+                "KYC_SUCCESS : with restriction:KYC_SUCCESS : with restriction": "Sorry, your KYC check has failed",
+                "EmailIDorphonenumbernotfoundordoesntbelongtothesamecustomerorprospect": "Your mobile number or email ID is already registered with the bank, login with registered details to access your online account",
+                "pegasuscomponentpasswordNOTCOMPLEXENOUGH": "Sorry, please enter a more complex password",
+                "NOT_COMPLEX_ENOUGH": "Sorry, please enter a more complex password",
+                "TOO_SHORT": "Sorry, entered password is too short",
+                "TOO_LONG": "Sorry, entered password is too long",
+                "NON_ALLOWED_CHARS": "Sorry, please enter a valid characters",
+                "INVALIDEMAIL": "Sorry, please enter a valid email address",
+                "INVALIDPHONENUMBER": "Sorry, please enter a valid phone number",
+                "DCOEMAILNOTVERIFIED": "Sorry, your email has not been verified!",
+                "DCOEMAILALREADYVERIFIED": "Your email has been verified!",
+                "InvalidEmailIDfound": "Sorry, the entered email address is invalid",
+                "DCOPROSPECTCREATIONERROREMAIL": "Sorry, there was an error processing your application",
+                "DCOPROSPECTCREATIONERRORPHONENUMBER": "Sorry, there was an error processing your application",
+                "DCOPASSWORDNOTFOUND": "Sorry, there was an error setting the password"
+            }
+        },
+        "401": {
+            "message": "Sorry, your session has been timed out! Please try again",
+            "title": "Session Time Out",
+            "custom": {
+                "Authorization failed": "Sorry, there was an error processing your request",
+                "DCOUNAUTHORISEDUSER": "Sorry, there was an error processing your request"
+            }
+        },
+        "403": {
+            "message": "Sorry Unauthorized",
+            "title": "Sorry Unauthorized"
+        },
+        "405": {
+            "message": "Sorry, there was an error processing your request",
+            "title": "Processing Error"
+        },
+        "500": {
+            "message": "Sorry, there was an error processing your request",
+            "title": "Technical error",
+            "custom": {
+                "Error occurred while processing request": "Sorry, there was an error processing your request",
+                "Internal server error": "Sorry, there was an error processing your information, please try again later",
+                "FAILED:null": "Sorry, there was an error processing your request",
+                "FAILED:Backend Exception": "Sorry, there was an error processing your request"
+            }
+        },
+        "503": {
+            "message": "Oops - there seems to be a technical glitch, please try again in some time",
+            "title": "Service Unavailable"
+        },
+        "504": {
+            "message": "Oops - there seems to be a technical glitch, please try again in some time",
+            "title": "Service Unavailable"
+        }
+    },
+    "errors": {
+        "common": {
+            "years": "years",
+            "minimum": "minimum",
+            "maximum": "maximum",
+            "characters": "Characters",
+            "format": "Format!",
+            "invalid": "Invalid"
+        },
+        "email": {
+            "required": "E-mail is required",
+            "invalid": "Valid e-mail address is required"
+        },
+        "phone_number": {
+            "required": "Phone number is required",
+            "invalid": "Valid phone number is required"
+        },
+        "phone_characters": "Valid phone number is required",
+        "date": {
+            "min": "You should be at least ",
+            "max": "Age should not be greater than ",
+            "year": "Invalid Date",
+            "invalid": "Invalid format"
+        }
+    },
+    "admin": {
+        "appTitle": "Digital Customer Onboarding",
+        "appLogoText": "Finastra - Digital Customer Onboarding",
+        "personalDetails": "Personal Details Configuration",
+        "addressDetails": "Address Details Configuration",
+        "additionalDetails": "Additional Details Configuration",
+        "reviewDetailsAndConsent": "Review & Consent Configuration",
+        "createCredentials": "Credentials Configuration",
+        "addNewStep": "Add New Step",
+        "enabled": "Enabled",
+        "mandatory": "Mandatory",
+        "cancel": "Cancel",
+        "done": "Done",
+        "noProductInfo": "Product information not found!\nAdd en/111/termdeposit to the URL",
+        "homePageHeading": "Selected product: ",
+        "applyButton": "Apply",
+        "logoutDialog_title": "Logout",
+        "stepDeleteDialog_title": "Delete Step",
+        "selectScreenSize": "Select Screen Size",
+        "changeSize": "Change Size",
+        "configureScreenSize": "Configure Screen Size",
+        "login": {
+            "loginTitle": "DCO Admin",
+            "loginUsernameField_label": "Username",
+            "loginPasswordField_label": "Password",
+            "loginButton_text": "Login",
+            "organizationURL": "Finastra"
+        },
+        "appConfigurations": {
+            "component_title": "App Configurations",
+            "defaultConfigurations": "Default Settings",
+            "includeDigitalSignature": "Include Digital Signature",
+            "enableCustomTheme": "Enable Custom Theme",
+            "enableCustomApplicationLogo": "Enable Custom Application logo",
+            "idleTimeoutInterval": "Idle Timeout Interval",
+            "enableCustomBackgroundImage": "Enable Custom Background",
+            "termsAndConditionsContentPath": "Terms and Conditions Path",
+            "languageSettings": "Language Settings",
+            "selectedLanguage": "Selected Language",
+            "availableLanguages": "Available Languages",
+            "applicationSettings": "Application Settings",
+            "applicationName": "Application Name",
+            "supportUrl": "Support Link",
+            "companyWebsite": "Company Website",
+            "helpUrl": "Help Link",
+            "serverSettings": "Server Settings",
+            "enableSecureMode": "Enable Secure Mode",
+            "portNumber": "Port",
+            "enableRtl": "Enable RTL",
+            "bankName": "Bank Name",
+            "enableHorizontalStepper": "Horizontal Stepper",
+            "enableVerticalStepper": "Vertical Stepper",
+            "defaultProductType": "Default Product Type",
+            "customerCredentialsValidation": "Customer Credentials Validation",
+            "keyCloackEnabled": "Enable KeyClock",
+            "countryCode": "Country Code",
+            "firstName": "First Name",
+            "maxFileSize": "Max File Size",
+            "timerInterval": "Time Interval",
+            "isTOSMandatory": "TOS Mandatory",
+            "targetCountry": "Target Country",
+            "enableTargetCountryAlert": "Enable Target Country Alert",
+            "baseUrl": "Base URL",
+            "defaultLanguage": "Default Language",
+            "customerCredentialsValidationRegEx": "Credential Validation Regular Expression",
+            "customerCredentialsValidationMessage": "Credential Validation Message",
+            "bankUrl": "Bank URL",
+            "emailRegEx": "Email RegEx",
+            "phoneNumberRegEx": "Phone Number RegEx",
+            "uploadCustomerPhotoHeight": "Upload Photo Height",
+            "uploadCustomerPhotoWidth": "Upload Photo Width"
+        },
+        "productConfiguration": {
+            "title": "Product Configuration",
+            "selectProduct_label": "Select Product",
+            "selectComponent_label": "Select Component",
+            "reorderButton_text": "Reorder Steps"
+        }
+    },
+    "reviewAndConsent": {
+        "bankTermsConsent": "I provide consent to ",
+        "productTermsAcceptedFlag": "Declaration and Consent",
+        "marketingEmailConsentFlag": "Marketing and Communication",
+        "review_your_information": "Review your Information",
+        "basic_information": "Personal Details",
+        "address": "Address",
+        "foreign_tax_information": "Your Tax Details",
+        "dob_label": "Date of Birth",
+        "email_label": "Email ID",
+        "identifier_type_label": "Identifier Type",
+        "identifier_number_label": "Number",
+        "mobile_label": "Phone Number",
+        "address_label": "Address Details",
+        "marketing": "Marketing and Communication",
+        "taxInformationForm": {
+            "countryOfTaxResidence_label": "Country of Tax Residence",
+            "citizenInUSA_label": "Citizen of US",
+            "taxPayerInUs_label": "Tax Payer in US?",
+            "tinNumber_label": "US TIN Number",
+            "taxIDNumber_label": "National Insurance Number"
+        },
+        "onboard_title": "Confirm Onboarding Details",
+        "postcode": "Postcode",
+        "nominatedDetails_label": "Nominated Account Details",
+        "sortCode_label": "Sort Code",
+        "account_label": "Account",
+        "selectedProduct_label": "Selected Product Details",
+        "termLength_label": "Term",
+        "termUnit": {
+            "M": "Months",
+            "D": "Days",
+            "Y": "Years"
+        },
+        "desc_label": "Description",
+        "rdi_label": "RDI",
+        "minmax_label": "Min-Max Amount",
+        "name_label": "Name",
+        "financial_services": "Our products are covered by the Financial Services Compensation Scheme (FSCS)"
+    },
+    "stepper": {
+        "footer": {
+            "tooltip_back": "Back",
+            "saveAndExit": "Save & Exit",
+            "tooltip_next": "Next"
+        }
+    },
+    "form": {
+        "invalid_accountNumber_attempts_message": "Account Number Verification",
+        "invalid_accountNumber_message": "Validation of Nominated account is allowed maximum of three times. You will be redirected to the home page.",
+        "account_verification": {
+            "failure": "Nominated Account should be an external Account"
+        },
+        "fileUpload": {
+            "success": "File uploaded successfully",
+            "missingEntityCode": "Select details before file upload",
+            "info": "Please select PDF, PNG or JPG below 512kb",
+            "label": "Please upload bank account statement for verification",
+            "warning": "File is too large !",
+            "error": "Please select only PDF, PNG, JPG files",
+            "message": "Document View",
+            "failureMessage": "Upload bank statement to verify nominated account details in order to proceed",
+            "invalidMessage": "Entered Data is Invalid!",
+            "processingErrorMessage": "Oops, something went wrong - try again in some time"
+        }
+    }
+}

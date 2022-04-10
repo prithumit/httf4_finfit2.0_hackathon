@@ -1,0 +1,177 @@
+{
+  "title": "",
+  "schema": {
+    "firstName": {
+      "sort": 1,
+      "type": "text",
+      "appendIcon": "",
+      "label": "First Name",
+      "data-qa": "firstName",
+      "regex": "^([^ !@#\\$%\\^&\\*0-9])([a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "preview": {
+        "label": "Name",
+        "purgeNext": [
+          "lastName"
+        ],
+        "purgeSeperator": " "
+      },
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "mr-md-5",
+      "rules": [
+        "required",
+        "maxLen(75,75)"
+      ],
+      "minlength": "75"
+    },
+    "lastName": {
+      "sort": 2,
+      "type": "text",
+      "label": "Last Name",
+      "data-qa": "lastName",
+      "preview": {
+        "purge": true
+      },
+      "class": "ml-md-5",
+      "regex": "^([^ !@#\\$%\\^&\\*0-9])([a-zA-Z ]*)$",
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(75,75)"
+      ],
+      "minlength": "75"
+    },
+    "dateOfBirth": {
+      "sort": 4,
+      "type": "calendar",
+      "label": "Date of Birth",
+      "color": "primaryColor",
+      "max": "2021-01-20",
+      "placeholder": "DD-MM-YYYY",
+      "format": "DD-MM-YYYY",
+      "data-qa": "dateOfBirth",
+      "regex": "^\\d{2}-\\d{2}-\\d{4}$",
+      "mask": "XX-XX-XXXX",
+      "fieldValidation": true,
+      "preview": {
+        "label": "Date of Birth"
+      },
+      "autocomplete": "off",
+      "rules": [
+        "required",
+        "dateValidation(18,150)",
+        "dateFormatValidate"
+      ],
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "class": "ml-5"
+    },
+    "nationalIdTypeId": {
+      "sort": 3,
+      "type": "select",
+      "label": "National Identifier Type",
+      "data-dynRegex": true,
+      "preview": false,
+      "selected": 0,
+      "color": "primaryColor",
+      "data-qa": "nationalIdType",
+      "data-regex": {
+        "NATIONAL_ID_001": {
+          "regex": "^([^ !@#\\$%\\^&\\*])([a-zA-Z0-9]*)$"
+        },
+        "NATIONAL_ID_005": {
+          "regex": "^([^ a-zA-Z!@#\\$%\\^&\\*])([0-9]+)$"
+        },
+        "NATIONAL_ID_003": {
+          "regex": "^[a-zA-Z]{2}[0-9]{6}[a-zA-Z]$"
+        }
+      },
+      "data-piggyback": [
+        {
+          "data-key": "entityName",
+          "api-key": "nationalIdTypeCode"
+        }
+      ],
+      "data-relation": "nationalIdNumber",
+      "data-api-key": "lookupValuesByEntityCode?entityCode=FECO_PROOF_CATEGORY_IDENTITY",
+      "item-text": "entityName",
+      "item-value": "entityCode",
+      "class": "mr-md-5",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required"
+      ]
+    },
+    "nationalIdTypeCode": {
+      "id": "required",
+      "preview": {
+        "label": "National Identifier Type"
+      },
+      "type": "hidden"
+    },
+    "nationalIdNumber": {
+      "sort": 5,
+      "type": "text",
+      "label": "National Identifier Number",
+      "regex": "",
+      "data-qa": "nationalIdNumber",
+      "preview": {
+        "label": "National Identifier Number"
+      },
+      "color": "primaryColor",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "rules": [
+        "required",
+        "maxLen(50,50)"
+      ],
+      "class": "mr-md-5",
+      "appendIcon":""
+    },
+    "nationalIdDocument": {
+      "sort": 6,
+      "type": "hidden",
+      "entityCode": "FECO_PROOF_CATEGORY_IDENTITY",
+      "preview": false,
+      "label": "National Identifier Document",
+      "regex": "",
+      "flex": {
+        "xs": 12,
+        "sm": 6,
+        "lg": 6
+      },
+      "color": "primaryColor",
+      "accept": "image/png, image/jpeg, image/bmp, pdf, doc",
+      "rules": "",
+      "appendIcon": ""
+    }
+  },
+  "model": {
+    "firstName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "nationalIdTypeId": "",
+    "nationalIdNumber": "",
+    "nationalIdTypeCode": "",
+    "nationalIdDocument": ""
+  }
+}
